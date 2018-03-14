@@ -26,4 +26,6 @@ setup(
     ],
 
     packages=find_packages(exclude=['examples',]),
+
+    install_requires=['numpy', 'h5py', 'arrow',]
 )
