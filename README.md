@@ -1,7 +1,6 @@
 ## h5_logger 
 
-Simple HDF5 data logger. 
-
+Simple HDF5 data logger.  
 
 
 ## Installation
