@@ -1,1 +1,1 @@
-from h5_logger import H5Logger
+from .h5_logger import H5Logger
