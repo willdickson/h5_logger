@@ -75,7 +75,7 @@ class H5Logger(object):
             next_filename = self.get_next_filename()
             self.h5file = h5py.File(next_filename,'w')
             self.dataset_dict = {}
-            for key,val in data.iteritems():
+            for key,val in data.items():
                 if not type(val) == np.ndarray:
                     val_as_np = convert_to_np(val)
                 else:
@@ -100,7 +100,7 @@ class H5Logger(object):
             # Add data to existing hdf5 file dataset_dict
             if set(data.keys()) != set(self.dataset_dict.keys()):
                 raise ValueError('keys in data do not match those is existing dataset')
-            for key, val in data.iteritems():
+            for key, val in data.items():
                 shape = self.dataset_dict[key].shape
                 num_vals = shape[0]
                 self.dataset_dict[key].resize((num_vals+1,) + shape[1:])
