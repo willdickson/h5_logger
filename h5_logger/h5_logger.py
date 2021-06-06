@@ -88,7 +88,8 @@ class H5Logger(object):
 
             # Add data creation time 
             now = arrow.now()
-            self.h5file.attrs['timestamp'] = now.timestamp
+            print(now.timestamp(), type(now.timestamp()))
+            self.h5file.attrs['timestamp'] = now.timestamp()
             self.h5file.attrs['datetime'] = now.format('YYYY-MM-DD HH:mm:ss')
 
             # Add parameter attribute is it exists

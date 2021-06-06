@@ -2,3 +2,5 @@
 *.egg-info
 *.pyc
 *.hdf5
+build
+dist
