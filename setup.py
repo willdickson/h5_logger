@@ -6,7 +6,7 @@ import os
 here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
-    name='hg_logger',
+    name='h5_logger',
     version='0.0.0',
     description='HDF5 data logger',
     long_description=__doc__,
